@@ -1,0 +1,35 @@
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  background-color: #343A40;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.jumbotron {
+  color: #222;
+}
+
+.nav-link {
+  font-size: 1.25em !important;
+  font-weight: 300 !important;
+  margin: 0 1em;
+  text-align: center;
+}
+
+.info {
+  line-height: 2em;
+}
