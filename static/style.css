@@ -34,6 +34,8 @@ hr {
   background-color: rgba(0,0,0,0.75);
   border-top: 47px solid rgba(0,0,0,0.5);
   border-bottom: 36px solid rgba(0,0,0,0.66);
+  -webkit-box-shadow: 5px 0px 50px #000;
+          box-shadow: 5px 0px 50px #000;
 }
 
 .rectangle {
@@ -55,14 +57,18 @@ hr {
   z-index: 2;
 }
 
-
 .margin-top {
   margin-top: 50px;
 }
 
+.margin-bottom {
+  margin-bottom: 50px;
+}
+
 #hi {
   color: #fff;
-  animation: fall 2s forwards;
+  -webkit-animation: fall 2s forwards;
+          animation: fall 2s forwards;
   position: relative;
   bottom: 400%;
 }
@@ -70,32 +76,66 @@ hr {
 #my-sites {
   position: relative;
   right: 300%;
-  animation: slide-right 1.5s forwards;
-  animation-delay: 1s;
-  transform-origin: 75% center;
+  -webkit-animation: slide-right 1.5s forwards;
+          animation: slide-right 1.5s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-transform-origin: 75% center;
+      -ms-transform-origin: 75% center;
+          transform-origin: 75% center;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
-.scale-on-hover:hover {
+/* .scale-on-hover:hover {
   transform: scale(1.1, 1.1);
-}
+} */
 
 #about-me {
   position: relative;
   left: 300%;
-  animation: slide-left 1.5s forwards;
-  animation-delay: 1s;
-  transform-origin: 75% center;
+  -webkit-animation: slide-left 1.5s forwards;
+          animation: slide-left 1.5s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-transform-origin: 75% center;
+      -ms-transform-origin: 75% center;
+          transform-origin: 75% center;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 #my-sites-tag {
-  padding-bottom: 50px;
+  display: block;
+  /* padding-bottom: 100px; */
+  height: 200px;
+  margin-top: -200px;
+  visibility: hidden;
+}
+
+@-webkit-keyframes shiver {
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
 }
 
 @keyframes shiver {
   100% {
-    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+  }
+}
+
+@-webkit-keyframes fall {
+  100% {
+    bottom: 0;
   }
 }
 
@@ -105,25 +145,60 @@ hr {
   }
 }
 
-@keyframes slide-right {
+@-webkit-keyframes slide-right {
   0% {
-    transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
   }
   90% {
-    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
   }
   100% {
     right: 0;
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  90% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    right: 0;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  90% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    left: 0;
   }
 }
 
 @keyframes slide-left {
   0% {
-    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
   }
   90% {
-    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
   }
   100% {
     left: 0;
@@ -132,8 +207,12 @@ hr {
 
 a {
   color: #ddd;
+  -webkit-transition: color 500ms;
+  -o-transition: color 500ms;
   transition: color 500ms;
-  transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+       -o-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
 }
 
 a:hover {
@@ -157,6 +236,23 @@ a:hover {
 @media (max-width: 320px) {
   header {
     margin-top: 50px;
+  }
+
+  .separator {
+    height:250px;
+  }
+
+  #my-sites-tag {
+    height: 0;
+    margin: 0;
+  }
+
+  .rectangle {
+    visibility: hidden;
+  }
+
+  .rectangle-2 {
+    display: none;
   }
 }
 
