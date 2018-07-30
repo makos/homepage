@@ -65,6 +65,11 @@ hr {
   margin-bottom: 50px;
 }
 
+.push-top {
+  position: relative;
+  bottom: 300px;
+}
+
 #hi {
   color: #fff;
   -webkit-animation: fall 2s forwards;
@@ -90,9 +95,6 @@ hr {
   transition: transform 1s, -webkit-transform 1s;
 }
 
-/* .scale-on-hover:hover {
-  transform: scale(1.1, 1.1);
-} */
 
 #about-me {
   position: relative;
@@ -221,18 +223,6 @@ a:hover {
   color: #fff;
 }
 
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
 @media (max-width: 320px) {
   header {
     margin-top: 50px;
@@ -253,6 +243,11 @@ a:hover {
 
   .rectangle-2 {
     display: none;
+  }
+
+  .push-top {
+    top: 50px;
+    bottom: 0;
   }
 }
 
