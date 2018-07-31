@@ -9,7 +9,7 @@ body {
   font-weight: 400;
   background-color: #00001a;
   color: #fff;
-  background: url("img/bg.jpg") no-repeat center center fixed;
+  background: url("https://s3.eu-central-1.amazonaws.com/makos-homepage/img/bg.jpg") no-repeat center center fixed;
 }
 
 header {
