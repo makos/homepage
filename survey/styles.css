@@ -1,0 +1,102 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Verdana", sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background: rgb(251,221,255);
+    background: linear-gradient(0deg, rgba(251,221,255,1) 37%, rgba(132,234,255,1) 100%) fixed;
+}
+
+#survey-form {
+    line-height: 2em;
+}
+
+#description {
+    text-align: center;
+    padding: 2em 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+input[name="gender"] {
+    margin-left: 5px;
+}
+
+main {
+    text-align: center;
+    margin: 0 10%;
+    color: rgb(38, 38, 38);
+    border-radius: 5px;
+    position: relative;
+    top: 4em;
+    background-color: rgba(102, 153, 153, 0.5);
+}
+
+h1 {
+  padding-top: 2em;
+  color: rgb(38, 38, 38);
+  text-align: center;
+}
+
+.button-container {
+    padding: 2em 0;
+}
+
+.button-container button {
+  position: relative;
+  right: 5%;
+  background-color: #66ff66;
+  border-color: #66ff66;
+  width: 30%;
+  margin-left: 40%;
+  margin-right: 30%;
+  height: 25px;
+  border-radius: 10px;
+}
+
+textarea {
+  border-radius: 5px;
+}
+
+@media (max-width: 640px) {
+  main {
+    margin: 0;
+    text-align: center;
+  }
+  input {
+      margin-left: 0;
+  }
+  .margin-container {
+    margin-left: 0;
+  }
+
+  input[type="checkbox"] {
+      margin-left: 5px;
+  }
+
+  input[name="gender"] {
+      margin-left: 5px;
+  }
+
+  #survey-form {
+      padding-left: 0;
+  }
+  select {
+      margin-left: 0;
+  }
+
+
+}

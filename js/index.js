@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  // $(this).scrollTop(0);
+  $(this).scrollTop(0);
 
   $(document).on("click", "a[href^='#']", function (e) {
     e.preventDefault();
