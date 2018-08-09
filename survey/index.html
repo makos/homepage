@@ -1,74 +1,78 @@
+<!-- Copyright (C) 2018 Mateusz Makowski. See LICENSE for details. -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <title>Technical Survey</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body class="container">
-        <header>
-            <h1 id="title">Programming language survey</h1>
-        </header>
-        <main>
-            <p id="description">This survey's purpose is to gather information about commonly used programming languages.</p>
-            <form id="survey-form">
-                <label for="name" id="name-label">Your (nick)name</label>
-                <input type="text" id="name" placeholder="(Full) name or nick">
 
-                <label for="email" id="email-label">E-mail</label>
-                <input type="email" id="email" placeholder="E-mail address">
+<head>
+    <meta charset="utf-8">
+    <title>Technical Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
-                <label for="gender">Choose your gender</label>
-                <div class="margin-container">
-                    <input type="radio" name="gender" value="male" checked>Male</input>
-                    <input type="radio" name="gender" value="female">Female</input>
-                </div>
+<body class="container">
+    <header>
+        <h1 id="title">Programming language survey</h1>
+    </header>
+    <main>
+        <p id="description">This survey's purpose is to gather information about commonly used programming languages.</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Your (nick)name</label>
+            <input type="text" id="name" placeholder="(Full) name or nick">
 
-                <label for="age">How old are you?</label>
-                <input type="number" id="age" placeholder="Enter your age">
+            <label for="email" id="email-label">E-mail</label>
+            <input type="email" id="email" placeholder="E-mail address">
 
-                <label for="number">How many programming languages do you know?</label>
-                <input type="number" id="number" placeholder="Enter a number">
+            <label for="gender">Choose your gender</label>
+            <div class="margin-container">
+                <input type="radio" name="gender" value="male" checked>Male</input>
+                <input type="radio" name="gender" value="female">Female</input>
+            </div>
 
-                <label for="dropdown">Which operating system are you using right now?</label>
-                <select id="dropdown">
-                    <option value="windows">Windows (3.1/95/98/2000/ME/XP/7/8/10)</option>
-                    <option value="msdos">MS-DOS</option>
-                    <option value="macos">Mac OS 9</option>
-                    <option value="osx">Mac OS X (OSX)</option>
-                    <option value="debian">Debian Linux</option>
-                    <option value="ubuntu">Ubuntu Linux</option>
-                    <option value="gentoo">Gentoo Linux</option>
-                    <option value="arch">Arch Linux</option>
-                    <option value="rhel">Red Hat Linux</option>
-                    <option value="centos">CentOS Linux</option>
-                    <option value="otherlinux">Other Linux</option>
-                    <option value="other">Other</option>
-                </select>
+            <label for="age">How old are you?</label>
+            <input type="number" id="age" placeholder="Enter your age">
 
-                <label for="languages">Which programming languages are you proficient in?</label>
-                <div class="margin-container">
-                    <input type="checkbox" name="" value="csharp">C#</input>
-                    <input type="checkbox" name="" value="c">C</input>
-                    <input type="checkbox" name="" value="cpp">C++</input>
-                    <input type="checkbox" name="" value="java">Java</input>
-                    <input type="checkbox" name="" value="js">JavaScript</input>
-                    <input type="checkbox" name="" value="python">Python</input>
-                    <br>
-                    <input type="checkbox" name="" value="ruby">Ruby</input>
-                    <input type="checkbox" name="" value="perl">Perl</input>
-                    <input type="checkbox" name="" value="asm">Assembler</input>
-                    <input type="checkbox" name="" value="haskell">Haskell</input>
-                    <input type="checkbox" name="" value="lisp">Lisp</input>
-                </div>
+            <label for="number">How many programming languages do you know?</label>
+            <input type="number" id="number" placeholder="Enter a number">
 
-                <label for="comments">Any additional comments?</label>
-                <textarea name="comments" rows="4" cols="50"></textarea>
+            <label for="dropdown">Which operating system are you using right now?</label>
+            <select id="dropdown">
+                <option value="windows">Windows (3.1/95/98/2000/ME/XP/7/8/10)</option>
+                <option value="msdos">MS-DOS</option>
+                <option value="macos">Mac OS 9</option>
+                <option value="osx">Mac OS X (OSX)</option>
+                <option value="debian">Debian Linux</option>
+                <option value="ubuntu">Ubuntu Linux</option>
+                <option value="gentoo">Gentoo Linux</option>
+                <option value="arch">Arch Linux</option>
+                <option value="rhel">Red Hat Linux</option>
+                <option value="centos">CentOS Linux</option>
+                <option value="otherlinux">Other Linux</option>
+                <option value="other">Other</option>
+            </select>
 
-                <div class="button-container">
-                    <button type="button" id="submit">Submit</button>
-                </div>
-            </form>
-        </main>
-    </body>
+            <label for="languages">Which programming languages are you proficient in?</label>
+            <div class="margin-container">
+                <input type="checkbox" name="" value="csharp">C#</input>
+                <input type="checkbox" name="" value="c">C</input>
+                <input type="checkbox" name="" value="cpp">C++</input>
+                <input type="checkbox" name="" value="java">Java</input>
+                <input type="checkbox" name="" value="js">JavaScript</input>
+                <input type="checkbox" name="" value="python">Python</input>
+                <br>
+                <input type="checkbox" name="" value="ruby">Ruby</input>
+                <input type="checkbox" name="" value="perl">Perl</input>
+                <input type="checkbox" name="" value="asm">Assembler</input>
+                <input type="checkbox" name="" value="haskell">Haskell</input>
+                <input type="checkbox" name="" value="lisp">Lisp</input>
+            </div>
+
+            <label for="comments">Any additional comments?</label>
+            <textarea name="comments" rows="4" cols="50"></textarea>
+
+            <div class="button-container">
+                <button type="button" id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+
 </html>
